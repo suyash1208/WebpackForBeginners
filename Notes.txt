@@ -1,0 +1,45 @@
+Chapter-1
+------------------------------------
+$ npm init -y
+    will create package.json file. -y flag to answer yes for all prompted questions.
+
+$ npm install webpack@4 webpack-cli@3 --save-dev
+
+
+package-lock.json, 
+    is the full representation of the dependency tree of your project, 
+    including the indirect dependencies.
+
+$ webpack -version
+    it will invoke webpack command present in AppData\Roaming\npm\webpack.command
+    if you have install another version in node_module, provide proper path
+    
+$ node_modules\.bin\webpack -version
+    run project specific webpack command
+
+
+$ where.exe webpack
+    to get the path of a command
+
+
+default entry and output file
+    entry: src/index.json
+    output: dist/main.js
+
+
+$ node_modules\.bin\webpack --mode=development
+    to set mode from command line
+    production mode defaults: minify js, ...
+    development mode defaults: do not minify, ...
+
+
+npm run build
+    add following in package.json
+        "scripts": {
+            "build": "webpack --mode=production" // no need to specify webpack command path. npm knows where to find it.
+        },
+    
+    $ npm run build
+
+
+
