@@ -1,5 +1,6 @@
 Chapter-1
-------------------------------------
+###########
+
 $ npm init -y
     will create package.json file. -y flag to answer yes for all prompted questions.
 
@@ -40,6 +41,19 @@ npm run build
         },
     
     $ npm run build
+----------------------------------------------------------------------------------------------------
 
+
+Chapter-2
+#########
+
+Module
+    ES6
+        export { sayHello };
+        import { sayHello as sayHelloES6 } from './greeting_es6';
+
+    CommonJs
+        module.exports = sayHello;
+        var sayHelloCommonJs = require('./greeting_commonjs');
 
 
